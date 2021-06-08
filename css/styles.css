@@ -35,3 +35,8 @@ footer {
 .navbar {
      background-color: #901CAD;
 }
+
+/* BORDER STYLE TO SEE COMPONENTS ON SCREEN */
+.b {
+  border: solid red 1px;
+}
