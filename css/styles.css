@@ -7,14 +7,14 @@ h1, h2, h3 {
 }
 
 h2 {
-    color: #3046C5;
+  color: #3046C5;
 }
 
 header h2 {
-    color: #CEC8FF;
+  color: #CEC8FF;
 }
 
-footer {
+.site-footer {
     background-image: linear-gradient(#CEC8FF, white);
     padding: 20px 0;
 }
@@ -35,6 +35,7 @@ footer {
 .navbar {
      background-color: #901CAD;
 }
+
 
 /* BORDER STYLE TO SEE COMPONENTS ON SCREEN */
 .b {
