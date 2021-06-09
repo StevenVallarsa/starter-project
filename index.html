@@ -35,10 +35,9 @@
       <div class="col-1 b">12</div>
     </div>
     <div class="row">
-      <div class="col col-sm-6 b my-auto" style="height: 100px">
-        <div class="text-center "><span class="text-center">abc</span></div>
-      </div>
-      <div class="col col-sm-6 b my-auto">b</div>
+      <div class="col col-sm-6 b">1</div>
+      <div class="col b">1</div>
+      <div class="col col-md-2 b">1</div>
     </div>
   </div>
 
@@ -127,56 +126,93 @@
         </div>
       </div>
     </div>
-
-    <!-- FOOTER -->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-4 col-sm-2 offset-1">
-            <h5>Links</h5>
-
-            <div class="row">
-              <div style="padding-left: 10px">
-                <ul class="list-unstyled text-primary text-center">
-                  <li><a href="#"><i class="fa fa-home"></i></a></li>
-                  <li><a href="aboutus.html"><i class="fa fa-info"></i></a></li>
-                  <li><a href="#"><i class="fa fa-list"></i></a></li>
-                  <li><a href="contactus.html"><i class="fa fa-address-card"></i></a></li>
-                </ul>
+    <div class="row row-content">
+      <div class="col-sm-8 mx-auto">
+        <div class="card">
+          <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+          <div class="card-body">
+            <form>
+              <div class="row form-group">
+                <label class="col-sm-6 col-form-label" for="numCampers">Number of Campers</label>
+                <div class="col-sm-6">
+                  <select class="form-control" name="numCampers" id="numCampers">
+                    <option value="">Select...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                  </select>
+                </div>
               </div>
-              <div class="col">
-                <ul class="list-unstyled">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="aboutus.html">About</a></li>
-                  <li><a href="#">Sites</a></li>
-                  <li><a href="contactus.html">Contact</a></li>
-                </ul>
+              <div class="row form-group">
+                <label for="date" class="col-sm-6 col-form-label">Date</label>
+                <div class="col-sm-6">
+                  <input class="form-control" type="date" name="date" id="date" />
+                </div>
               </div>
-            </div>
-
-          </div>
-          <div class="col-6 col-sm-5 text-center">
-            <h5>Social</h5>
-            <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
-                class="fa fa-instagram"></i></a>
-            <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-          </div>
-          <div class="col-sm-4 text-center">
-            <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i>
-              1-206-555-1234</a><br />
-            <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i>
-              campsites@nucamp.co</a>
+              <div class="row">
+                <div class="col">
+                  <button class="btn btn-primary" type="submit">Search</button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
 
-    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-4 col-sm-2 offset-1">
+          <h5>Links</h5>
+
+          <div class="row">
+            <div style="padding-left: 10px">
+              <ul class="list-unstyled text-primary text-center">
+                <li><a href="#"><i class="fa fa-home"></i></a></li>
+                <li><a href="aboutus.html"><i class="fa fa-info"></i></a></li>
+                <li><a href="#"><i class="fa fa-list"></i></a></li>
+                <li><a href="contactus.html"><i class="fa fa-address-card"></i></a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="list-unstyled">
+                <li><a href="#">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="#">Sites</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-6 col-sm-5 text-center">
+          <h5>Social</h5>
+          <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+          <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+          <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+          <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+        </div>
+        <div class="col-sm-4 text-center">
+          <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i>
+            1-206-555-1234</a><br />
+          <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i>
+            campsites@nucamp.co</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
 
