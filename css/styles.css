@@ -47,8 +47,16 @@ a, a:hover {
   text-decoration: none;
 }
 
+.carousel-caption {
+  background-color: rgba(0, 0, 0, .5);
+}
 
-/* BORDER STYLE TO SEE COMPONENTS ON SCREEN */
+.carousel {
+  border: solid #5637DD;
+}
+
+
+/* BORDER STYLE TO SEE AREAS ON SCREEN */
 .b {
   border: solid red 1px;
 }
