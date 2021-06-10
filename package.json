@@ -1,6 +1,7 @@
 {
   "name": "nu-camp",
   "version": "1.0.0",
+  "private": true,
   "description": "Going through the site creation process a second time to cement my learning",
   "main": "index.html",
   "scripts": {
