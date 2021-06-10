@@ -36,6 +36,12 @@ header h2 {
      background-color: #901CAD;
 }
 
+.tab-content {
+  border: 1px solid #DDDDDD;
+  border-top: none;
+  padding: 10px;
+}
+
 
 /* BORDER STYLE TO SEE COMPONENTS ON SCREEN */
 .b {
