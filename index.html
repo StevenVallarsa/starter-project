@@ -15,6 +15,14 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
   <link rel="stylesheet" href="css/styles.css" />
   <title>NuCamp: A Better Way To Camp</title>
+
+  <!-- jQuery must come first, then Popper.js, 
+    then the Bootstrap JavaScript plugins.-->
+  <script defer src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script defer src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script defer src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script defer src="js/scripts.js"></script>
+
 </head>
 
 <body>
@@ -362,10 +370,6 @@
     </div>
   </footer>
 
-  <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
   <!-- JS FOR TOOLTIP <script>
     $(function () {
@@ -373,22 +377,6 @@
     })
   </script> -->
 
-  <script>
-    $(function () {
-      $(".carousel").carousel({ interval: 2000 });
-      $("#carouselButton").click(function () {
-        if ($("#carouselButton").children("i").hasClass("fa-pause")) {
-          $(".carousel").carousel("pause");
-          $("#carouselButton").children("i").removeClass("fa-pause");
-          $("#carouselButton").children("i").addClass("fa-play");
-        } else {
-          $(".carousel").carousel("cycle");
-          $("#carouselButton").children("i").removeClass("fa-play");
-          $("#carouselButton").children("i").addClass("fa-pause");
-        }
-      });
-    });
-  </script>
 
 
 </body>

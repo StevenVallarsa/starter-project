@@ -15,6 +15,13 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
   <link rel="stylesheet" href="css/styles.css" />
   <title>NuCamp: A Better Way To Camp</title>
+
+  <!-- jQuery must come first, then Popper.js, 
+        then the Bootstrap JavaScript plugins.-->
+  <script defer src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script defer src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script defer src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
@@ -223,50 +230,48 @@
 
       </div>
     </div>
-  </div>
 
-  </div>
-
-  <!-- TABLE -->
-  <div class="row row-content">
-    <div class="col-sm-9">
-      <h2>Facts &amp; Figures</h2>
-      <div class="table-responsive">
-        <table class="table table-striped">
-          <thead>
-            <tr class="bg-primary text-light">
-              <th></th>
-              <th>2016</th>
-              <th>2017</th>
-              <th>2018</th>
-            </tr>
-          </thead>
-          <tbody class="table-primary">
-            <tr>
-              <th>Staff Wilderness Experts</th>
-              <td>10</td>
-              <td>20</td>
-              <td>40</td>
-            </tr>
-            <tr>
-              <th>New Campers</th>
-              <td>256</td>
-              <td>1,280</td>
-              <td>5,360</td>
-            </tr>
-            <tr>
-              <th>Square Miles Covered</th>
-              <td>101,325</td>
-              <td>423,000</td>
-              <td>~3,000,000,000</td>
-            </tr>
-          </tbody>
-        </table>
+    <!-- TABLE -->
+    <div class="row row-content">
+      <div class="col-sm-9">
+        <h2>Facts &amp; Figures</h2>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr class="bg-primary text-light">
+                <th></th>
+                <th>2016</th>
+                <th>2017</th>
+                <th>2018</th>
+              </tr>
+            </thead>
+            <tbody class="table-primary">
+              <tr>
+                <th>Staff Wilderness Experts</th>
+                <td>10</td>
+                <td>20</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <th>New Campers</th>
+                <td>256</td>
+                <td>1,280</td>
+                <td>5,360</td>
+              </tr>
+              <tr>
+                <th>Square Miles Covered</th>
+                <td>101,325</td>
+                <td>423,000</td>
+                <td>~3,000,000,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
 
-  </div>
+
 
   <!-- FOOTER -->
   <footer class="site-footer">
@@ -311,11 +316,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
 
