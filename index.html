@@ -180,7 +180,7 @@
 
     <!-- CAROUSEL -->
     <div class="row row-content">
-      <div class="col-md-8 mx-auto">
+      <div class="col-md-8 mx-auto px-0">
         <div id="homeCarousel" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
@@ -221,6 +221,14 @@
             <span class="carousel-control-next-icon"></span>
             <span class="sr-only">Next</span>
           </a>
+        </div>
+        <div class="btn-group" id="carouselButton">
+          <button class="btn btn-danger btn-sm" id="carouselPause">
+            <i class="fa fa-pause"></i>
+          </button>
+          <button class="btn btn-danger btn-sm" id="carouselPlay">
+            <i class="fa fa-play"></i>
+          </button>
         </div>
       </div>
     </div>
@@ -369,6 +377,18 @@
       $('[data-toggle="tooltip"]').tooltip()
     })
   </script> -->
+
+  <script>
+    $(function () {
+      $(".carousel").carousel({ interval: 2000 });
+      $("#carouselPause").click(function () {
+        $(".carousel").carousel("pause");
+      });
+      $("#carouselPlay").click(function () {
+        $(".carousel").carousel("cycle");
+      });
+    });
+  </script>
 
 </body>
 
